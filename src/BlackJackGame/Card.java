@@ -8,7 +8,9 @@ public class Card {
 		this.suit = suit;
 		this.value = value;
 	}
-
+	
+	
+	//Getter setters
 	public int getValue() {
 		return value;
 	}

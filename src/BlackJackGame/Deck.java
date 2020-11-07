@@ -27,6 +27,16 @@ public class Deck {
 		stackOfCards.add(card);
 	}
 
+
+	public void setupDeck() {
+		for (int i = 1; i <= 13; i++) {
+			addCardToDeck(new Card(i, Suit.CLUB));
+			addCardToDeck(new Card(i, Suit.DIAMOND));
+			addCardToDeck(new Card(i, Suit.HEART));
+			addCardToDeck(new Card(i, Suit.SPADE));
+		}
+	}
+	
 	public void shuffleDeck() {
 		// take stack of cards
 		for (Card card : stackOfCards) {
@@ -40,14 +50,5 @@ public class Deck {
 			cardStack.remove(randomIndex);
 		}
 		System.out.println("DeckShuffled");
-	}
-
-	public void setupDeck() {
-		for (int i = 1; i <= 13; i++) {
-			addCardToDeck(new Card(i, Suit.CLUB));
-			addCardToDeck(new Card(i, Suit.DIAMOND));
-			addCardToDeck(new Card(i, Suit.HEART));
-			addCardToDeck(new Card(i, Suit.SPADE));
-		}
 	}
 }
