@@ -68,7 +68,7 @@ public class BlackJackPlayer {
 	 */
 	public Boolean checkBust() {
 		if (getHandValue() > 21) {
-			System.out.println("Busted!");
+			System.out.println(name + " Busted!");
 			return true;
 		} else {
 			return false;
